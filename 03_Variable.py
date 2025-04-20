@@ -37,6 +37,7 @@ print(name[1:])
 
 print(name[:4])
 
+# 👉String is a collection of multiple characters.
 # 👉Sting is immutable means it can not change the value.
 
 print('my ' + name[3:])
