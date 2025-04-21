@@ -4,6 +4,7 @@
 # 3)Logical Operator
 # 4)Unary Operator
 # 5)Relational Operator
+# 6)Bitwise Operator
 
 # 👉1)Arithmatic Operator :- + , - , * , / , %
 
@@ -97,6 +98,33 @@ y = False
 print(y)
 print(not y)
 
+# 👉Bitwise Operator :- AND(&) , OR(||) , XOR(^) , Complement(~) or tilde ,
+#                       left shift(<<) , right shift(>>)
 
+# 👉Complement(~) :- means reverse for the binary format
+
+print(~12)
+
+# 👉AND(&) :-
+print(12 & 13)  #12
+
+# 👉OR( | ):-
+print(12 | 13) #13
+
+# 👉XOR(^) :-
+
+# 0 0 0
+# 1 0 1
+# 0 1 1
+# 1 1 0
+
+print(12 ^ 13)   #1
+
+
+# 👉Left shift(<<)
+print(10 << 2)
+
+# 👉Right shift(>>)
+print(10 >> 2)
 
 
