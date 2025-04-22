@@ -40,3 +40,17 @@ for i in range(1,101):
         pass
     else:
         print(i)
+
+# 👉if print the hello for 5 time but is skip the i=3 and loop is continue.
+
+for i in  range(1,6):
+    if i == 3:
+        continue
+    print("Hello",i)
+
+# 👉if print the hello for 5 time but is break for the i=3 and loop is stop.
+
+for i in range(1,6):
+    if i == 4:
+        break
+    print("Hy",i)
