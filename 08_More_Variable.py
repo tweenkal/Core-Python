@@ -1,4 +1,5 @@
-# 👉Variable :- Variable means it is the assign the value and it change the value.
+# 👉Variable :- Variable means it is the assign the value and it
+# change the value.
 # 👉Ever variable is some is the address
 
 num = 23
