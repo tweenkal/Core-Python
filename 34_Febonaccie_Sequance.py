@@ -9,7 +9,7 @@ def feb(n):
     a = 0
     b = 1
 
-    if n == 1:
+    if n < 0:
         print(a)
 
     else:
@@ -21,4 +21,4 @@ def feb(n):
             a = b
             b = c
             print(c)
-feb(10)
+feb(n)
