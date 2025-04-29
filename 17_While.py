@@ -30,3 +30,25 @@ while i <= 5:
         j += 1
     i += 1
     print()
+
+
+# 👉print the table for 6
+
+a = 6
+b = 1
+
+while a <= 60:
+    print("6 * " ,b,"=", a)
+    a += 6
+    b += 1
+
+
+# 👉Task :- print 1 to 5 sum
+
+a = 1
+sum = 0
+
+while a <= 5:
+    sum += a
+    a += 1
+print(a)

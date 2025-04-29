@@ -3,19 +3,33 @@
 # 5! = 5 * 4 * 3 * 2 * 1
 # 4! = 4 * 3 * 2 * 1
 
-n = int(input("Enter any number="))
+# n = int(input("Enter any number="))
+#
+# def fact():
+#
+#     if n < 0:
+#         print("Invalid number")
+#
+#     else:
+#         fact = 1
+#
+#         for i in range(1,n+1):
+#             fact *= i
+#         print(fact)
+#
+# fact()
 
-def fact():
 
-    if n < 0:
-        print("Invalid number")
+# 👉Factorial using recursion
 
-    else:
-        fact = 1
+n = int(input("Enter no="))
 
-        for i in range(1,n+1):
-            fact *= i
-        print(fact)
+def fact(x):
 
-fact()
+    if n == 1:
+        return 1
 
+    return x * fact(n-1)
+
+result = fact(n)
+print(result)

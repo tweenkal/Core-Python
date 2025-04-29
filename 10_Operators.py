@@ -5,6 +5,7 @@
 # 4)Unary Operator
 # 5)Relational Operator
 # 6)Bitwise Operator
+from xmlrpc.client import FastParser
 
 # 👉1)Arithmatic Operator :- + , - , * , / , %
 
@@ -128,3 +129,33 @@ print(10 << 2)
 print(10 >> 2)
 
 
+# 👉Identity Operator:-
+# 1)is 2)is not :- it is check the two variable value same or not.
+
+a = 10
+b = 10
+
+print(a is b)
+print(a is not b)
+
+# 👉Membership operator
+# 1)in 2)not in :- it is check value is sequance or not and charcter
+# is present in variable or not then character is present the variable
+# and their sequance then it is true otherwise false.
+
+c = "hello"
+print('h' in c)  #True
+print('hl' in c)  #False because it not a sequance.
+
+list = [1,"hi",False,7]
+print('h' in list)   #Fale because it not search a particular one element .
+
+print('hi' in list)
+
+# 👉Notes:-
+# 👉Difference between the logical and bitwise operator.
+# 👉Logical operator are used for any operator like int , string etc.
+# 👉Bitwise operator are only work for int.
+# 👉bitwise operator are used to perform bitwise calculation on
+# integer.the integers are first converted into binary and then
+# operations are perform are each bit or corrosponding pair of bits.
