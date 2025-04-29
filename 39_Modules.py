@@ -9,6 +9,8 @@
 # 4 module like A C B D.if you want to change something A it not effecting
 # the other module because they are saprate  now
 
+# 👉It is break down the project into small small parts
+
 from Modules2 import *
 
 a = 20
