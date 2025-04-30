@@ -23,5 +23,6 @@
 
 # 👉OOPS concepts:-
 # 1)object 2) class 3)Encapsulation 4)Polymorphism 5)Abstraction
-# class - class is a design or that you can call a blueprint
+# class - class is a design or that you can call a blueprint.class is a
+# varibale and method
 # object - instance of a class

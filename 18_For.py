@@ -38,3 +38,25 @@ for i in range(20,10,-1):
 for i in range(1,21):
     if i % 5 != 0:
         print(i)
+
+# 👉hello print line by line
+
+str = "hello"
+
+for i in str:
+    print(i)
+
+# 👉for loop in list(Nested for):-
+
+list1 = [1,2,3]
+list2 = ["Python","React Js","PHP"]
+
+for i in list1:
+    for j in list2:
+        print(i,j)
+
+# 👉for loop:
+
+for i in range(1,101,10):
+    print(i)
+

@@ -18,3 +18,13 @@ print(tup.count(24))
 
 #index() :- its a find the index number of the value in the tuple
 print(tup.index(66))
+
+
+# 👉tuple:-
+
+# here coma is consider the tuple
+tup = ('hello',)
+print(tup)
+print(type(tup))
+b = 5,'hello'
+print(type(b))

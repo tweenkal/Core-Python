@@ -59,7 +59,7 @@ print(lis)
 del lis[2:]
 print(lis)
 
-# 👉extend :- means the add the multiple value in the list
+# 👉extend :- means the add the multiple value in the list means merge the list
 lis.extend([23,24,67,54,35])
 print(lis)
 
