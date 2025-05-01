@@ -85,8 +85,8 @@ c1 = C()
 # then class B ->feature1 , feature 2 ,feature 3, feature 4
 # then class C -> feature1 , feature 2 ,feature 3, feature 4 , feature 5
 
-# 👉Multiple Inheritance :- Class c is inherites the parent class A
-# anf class B.
+# 👉Multiple Inheritance :- Class c is inherites the parent class A.
+# and class B. one class extends to a multiple class
 
 class A:
     def feature1(self):

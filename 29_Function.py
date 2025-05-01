@@ -59,3 +59,45 @@ def grater(a,b):
 
 grater(4,8)
 gmean(4,8)
+
+
+# 👉Using user input
+number = int(input("Enter rollno="))
+name = input("Enter name=")
+
+def func(name,rollno):
+    print("name is=",name)
+    print("Roll no=",rollno)
+
+func(number,name)
+
+# 👉line by line print
+
+def demo(*name):
+    for i in name:
+        print("my name is=",i)
+
+demo("pqr","xyz","abc")
+
+# 👉doc string
+
+def demo():
+    """
+    This is the doc string
+    """
+    print("Thi is a function")
+
+print(demo.__doc__)   # this is the print the docstring
+
+# 👉here this is the execute the multiline comment using __doc__
+
+def demo():
+    print("Thi is a function")
+    """
+    This is the doc string
+    """
+
+print(demo.__doc__)   # this is the print the docstring
+
+# This is the  get output None means is doc string is execute for before
+# the function the first line not a after
