@@ -5,3 +5,4 @@
 # 👉Abstract method:-
 # 👉Abstract method means the only declaration not a deffination
 # is called Abstract method.
+# 👉Abstract class have one abstract method

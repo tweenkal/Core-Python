@@ -9,11 +9,8 @@
 # this random is the print the random element in for the specific limit
 # This is use for the otp , dice , capcha code.
 import random
-from logging import fatal
 from math import factorial
 from random import shuffle
-
-from qrcode.main import QRCode
 
 print(random.randint(0,70))
 
