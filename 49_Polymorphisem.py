@@ -85,4 +85,45 @@ print(s2)
 # 👉Method overloading :- is not there in python means two method have a
 # same name but argument must be different.
 
+class student:
+
+    def __init__(self,m1,m2):
+        self.m1 = m1
+        self.m2 = m2
+
+
+    def sum(self,a=None,b=None,c=None):
+        if a != None and b != None and c != None:
+            s = a + b + c
+
+        elif a != None and b != None:
+            s = a + b
+
+        else:
+            s = a
+
+        return s
+
+s1 = student(78,89)
+print(s1.sum(78,90))
+
+
 # 👉method overriding :- same name and same parameter
+
+class A:
+
+    def show(self):
+        print("In A show")
+
+class B(A):
+
+    def show(self):
+        print("In B show")
+
+
+a1 = B()
+a1.show()
+
+
+# 👉here class B is show method override the class A show method then
+# it is give the output of the In B show.
