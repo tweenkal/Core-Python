@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipe Finder - TheMealDB</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+    .recipe {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Recipe Finder 🍽️</h1>
+
+  <input type="text" id="searchInput" placeholder="Enter recipe name...">
+  <button onclick="searchRecipe()">Search</button>
+
+  <div id="recipeContainer"></div>
+
+  <script>
+    async function searchRecipe() {
+      const query = document.getElementById('searchInput').value;
+      const container = document.getElementById('recipeContainer');
+      container.innerHTML = 'Loading...';
+
+      try {
+        const res = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`);
+        const data = await res.json();
+
+        if (data.meals) {
+          const meal = data.meals[0];
+          container.innerHTML = `
+            <div class="recipe">
+              <h2>${meal.strMeal}</h2>
+              <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
+              <h3>Instructions:</h3>
+              <p>${meal.strInstructions}</p>
+              <a href="${meal.strSource}" target="_blank">View Source</a>
+            </div>
+          `;
+        } else {
+          container.innerHTML = 'No recipe found!';
+        }
+      } catch (error) {
+        console.error(error);
+        container.innerHTML = 'Error fetching recipe.';
+      }
+    }
+  </script>
+
+</body>
+</html>
