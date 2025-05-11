@@ -9,3 +9,28 @@ It is also called General purpose language
 👉Python is Developed by the Guido van Rossum
 👉Python is the different version like python 1.0 , python 2.0 and
   python 3.0 this still python 2.0 is the market
+👉Python is compiled as well as interpreater language.
+
+👉What is compiler?
+👉C and C++ is the compile language.
+👉This is high level language means the machine is not understand the this language.
+👉C code is compiled to machine language then it is the compile to come
+👉Python code is first get the compiler and give you to the byte code
+ and byte code will be interpreated in a machine language and this is the
+ python virtual machine.
+👉interpreater means you have set of instructions and here interpreater is read each line
+one by one. or line by line
+👉Python is used PVM(Python virtual machine) and its run the python code.
+
+
+👉Compile:-
+👉A compiler is a program that translates the entire source code
+ (your program) into machine code (binary) before the program runs.
+👉After compiling, you get an executable file (like .exe in Windows).
+👉If there are errors, you must fix them and compile again.
+
+👉Interpreter:-
+👉An interpreter is a program that reads your source code line
+by line and executes it directly without making a separate machine
+ code file first.
+👉If there’s an error, it shows immediately while running.
