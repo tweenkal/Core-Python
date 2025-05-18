@@ -34,3 +34,16 @@ one by one. or line by line
 by line and executes it directly without making a separate machine
  code file first.
 👉If there’s an error, it shows immediately while running.
+
+👉Escape sequance means new line \n.
+
+
+string methods:-
+
+str = "Twinkle Pansuriya"
+print(str[-8:-1])
+print(str.split(" "))
+
+split is covert string to list
+
+capitlize() is the string of first character is capital

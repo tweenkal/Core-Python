@@ -28,3 +28,19 @@ print(tup)
 print(type(tup))
 b = 5,'hello'
 print(type(b))
+
+
+# 👉change the tuple
+
+tup1 = ("Apple","Banana","Cherry","Mango","Rasbari")
+print(tup1)
+
+tup2 = list(tup1)
+tup2.append("Orange")
+print(tup2)
+
+tup2[1] = "Banana1"
+print(tup2)
+
+tup3 = tuple(tup2)
+print(tup3)

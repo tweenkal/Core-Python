@@ -60,3 +60,12 @@ for i in list1:
 for i in range(1,101,10):
     print(i)
 
+
+for i in range(1,12,3):
+    print(i)
+
+
+for i in range(12):
+    print("6 * ",i, "=" ,6 * i)
+    if i == 10:
+        break
