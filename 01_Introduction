@@ -47,3 +47,6 @@ print(str.split(" "))
 split is covert string to list
 
 capitlize() is the string of first character is capital
+
+array = list
+object = dictionary
