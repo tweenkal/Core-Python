@@ -1,0 +1,2 @@
+# armstrong in interval
+

@@ -25,10 +25,10 @@
 # * * *
 # * * * * print this
 
-for i in range(4):
-    print()
-    for j in range(i+1):
-        print("*",end="")
+# for i in range(4):
+#     print()
+#     for j in range(i+1):
+#         print("*",end="")
 
 # 👉Using while loop
 
@@ -64,7 +64,9 @@ for i in range(4):
 #     i += 1
 
 
-
-
+# for i in range(5):
+#     print()
+#     for j in range(i - 1):
+#         print("*",end=" ")
 
 

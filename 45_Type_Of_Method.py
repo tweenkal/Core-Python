@@ -22,6 +22,8 @@
 # and mention the class method.
 # 👉static method is not related to the object not related to the class
 # its a blank no self no cls. and it is define the @ decorator static method.
+from tempfile import tempdir
+
 
 class Student:
 
@@ -65,3 +67,4 @@ print("Avg2=",s2.avg())
 
 print("School=",Student.get_School())
 Student.info()
+
