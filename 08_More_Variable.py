@@ -33,3 +33,4 @@ print(PI)
 # 👉type of variable
 PI = 3.15
 print(type(PI))
+

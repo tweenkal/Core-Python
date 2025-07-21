@@ -82,3 +82,55 @@ print(lis)
 print(lis)
 lis[2] = 34
 print(lis)
+
+
+# **************************************************************
+# append :-
+lis = [1,2,3,4,5]
+lis.append(6)
+print(lis)
+
+# insert:-
+lis = [1,2,3,4,5]
+lis.insert(1,10)
+print(lis)
+
+# extend
+lis1 = [1,2,3,4]
+lis2 = [5,6,7,8]
+lis1.extend(lis2)
+print(lis1)
+
+#sort
+lis = [2,1,4,3,6]
+lis.sort()
+print(lis)
+
+#reverese
+lis = [1,2,3,4,5]
+lis.reverse()
+print(lis)
+
+# remove
+lis = [1,2,3,4,5]
+lis.remove(3)
+print(lis)
+
+# pop
+lis = [1,2,3,4]
+lis.pop()
+print(lis)
+
+lis = [1,2,3,4,5]
+lis.pop(2)
+print(lis)
+
+# count
+lis = [1,2,2,3,4,5]
+x = lis.count(2)
+print(x)
+
+# index
+lis = [1,2,3,4,5]
+x = lis.index(2)
+print(x)

@@ -44,3 +44,19 @@ print(tup2)
 
 tup3 = tuple(tup2)
 print(tup3)
+
+
+# ********************************************************
+tup = (1,2,3,4)
+x = tup.index(3)
+print(x)
+
+tup = (1,2,2,3,4)
+x = tup.count(2)
+print(x)
+
+tup = (1,2,3,4)
+x = list(tup)
+x[1] = 5
+y = tuple(x)
+print(y)

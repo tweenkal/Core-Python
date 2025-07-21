@@ -59,3 +59,56 @@ print(prog['Python'][2])
 
 print(prog['Java'])
 
+
+# ************************************************
+
+# get
+dict = {'a':1 , 'b':2 ,'c' : 3}
+x = dict.get('c')
+print(x)
+
+# update
+dict1 = {'a':1 , 'b':2 ,'c' : 3}
+dict2 = {'d' : 3,'e':5}
+dict1.update(dict2)
+print(dict1)
+
+dict = {'a':1 , 'b':2 ,'c' : 3}
+dict.update({'d':5})
+print(dict)
+
+# pop
+dict = {'a':1 , 'b':2 ,'c' : 3}
+dict.pop('c')
+print(dict)
+
+# popitem
+dict = {'a':1 , 'b':2 ,'c' : 3}
+dict.popitem()
+print(dict)
+
+# clear
+dict = {'a':1 , 'b':2 ,'c' : 3}
+dict.clear()
+print(dict)
+
+# copy
+dict = {'a':1 , 'b':2 ,'c' : 3}
+x = dict.copy()
+print(x)
+
+# keys
+dict = {'a':1 , 'b':2 ,'c' : 3}
+x = dict.keys()
+print(x)
+
+# values
+dict = {'a':1 , 'b':2 ,'c' : 3}
+x = dict.values()
+print(x)
+
+# items
+dict = {'a':1 , 'b':2 ,'c' : 3}
+x = dict.items()
+print(x)
+

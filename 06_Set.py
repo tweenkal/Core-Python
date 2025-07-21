@@ -11,3 +11,42 @@
 
 set = {23,56,43,23,78,65}
 print(set)
+
+# ****************************************************************
+# add
+set = {1,2,3,4}
+set.add(5)
+print(set)
+
+# remove
+set = {1,2,3,4}
+set.remove(2)
+print(set)
+
+# pop
+set = {1,2,3,4}
+set.pop()
+print(set)
+
+# union
+set1 = {1,2,3,4}
+set2 = {2,3,4,5}
+set3 = set1.union(set2)
+print(set3)
+
+# intersection
+set1 = {1,2,3,4,5}
+set2 = {2,3,4,5,6}
+
+set3 = set1.intersection(set2)
+print(set3)
+
+# clear
+set = {1,2,3,4}
+set.clear()
+print(set)
+
+# copy
+set = {1,2,3,4}
+x = set.copy()
+print(x)
