@@ -3,7 +3,6 @@
 # 👉List is represent to the [].
 # 👉Lis is mutable means it can change the value.
 # 👉List is the different type like integer, float , string etc...
-from win32comext.mapi.mapiutil import prTable
 
 # in interview asked already this questions
 #👉list inside list
@@ -530,9 +529,6 @@ unique_nums = list(set(nums))
 unique_nums.sort()
 print(unique_nums)
 print(len(unique_nums))
-
-
-
 
 # ************************************************************************
 
