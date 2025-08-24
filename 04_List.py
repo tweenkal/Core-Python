@@ -3,6 +3,7 @@
 # 👉List is represent to the [].
 # 👉Lis is mutable means it can change the value.
 # 👉List is the different type like integer, float , string etc...
+from win32comext.mapi.mapiutil import prTable
 
 # in interview asked already this questions
 #👉list inside list
@@ -336,4 +337,202 @@ for x in list2:
 print(list1)
 # output:-['a', 'b', 'c', 1, 2, 3]
 
+# find the sum of all numbers
+numbers = [5, 10, 15, 20, 25]
+sum = sum(numbers)
+print(sum)
+# output:-75
+
+#Sort the list in reverse order.
+numbers = [5, 10, 15, 20, 25]
+numbers.sort(reverse=True)
+print(numbers)
+# output:-[25, 20, 15, 10, 5]
+
+# Loop through the list and print the type of each item.
+mixed = [1, "hello", 3.14, True]
+for i in mixed:
+  print(i)
+#output:-
+# 1
+# hello
+# 3.14
+# True
+
+# Access the number 4.
+matrix = [[1, 2], [3, 4], [5, 6]]
+a = matrix[1][1]
+print(a)
+# output:-4
+
+# Add a new row: [7, 8].
+matrix = [[1, 2], [3, 4], [5, 6]]
+matrix.append([7,8])
+print(matrix)
+# output:-[[1, 2], [3, 4], [5, 6], [7, 8]]
+
+#Flatten the list into a single list: [1, 2, 3, 4, 5, 6].
+matrix = [[1, 2], [3, 4], [5, 6]]
+flat = [item for row in matrix for item in row]
+print(flat)
+# output:-[1, 2, 3, 4, 5, 6]
+
+
+# Create a list [2, 2, 2, 2, 2]
+a = [2] * 5
+
+# Create a list [0, 0, 0, 0, 0, 0, 0]
+b = [0] * 7
+
+print(a)
+print(b)
+# output:-[2, 2, 2, 2, 2]
+# [0, 0, 0, 0, 0, 0, 0]
+
+# nested list
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+# Access element at row 2, column 3
+print(matrix[1][2])
+# output:-6
+
+# list comprasion
+# Create a list of squares from 1 to 5
+squares = [x**2 for x in range(1, 6)]
+print(squares)
+
+#list traversal
+arr = [54, 43, 2, 1, 5]
+print(*arr)
+# output:-54 43 2 1 5
+
+#length of list
+lis = [3,4,5,6,7]
+print(len(lis))
+# output:-5
+
+#create list using range
+r1 = 0
+r2 = 10
+li = list(range(r1,r2))
+print(li)
+# output:-[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# using list compresion
+r1 = 0
+r2 = 10
+li = [i for i in range(r1, r2)]
+print(li)
+# output:-[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+#Create a List of Tuples in Python
+a = [1, 2, 3]
+b = ['apple', 'orange', 'cherry']
+res = list(zip(a, b))
+print(res)
+# output:-[(1, 'apple'), (2, 'orange'), (3, 'cherry')]
+
+a = [[1, 'apple'], [2, 'orange'], [3, 'cherry']]
+res = list(map(tuple, a))
+print(res)
+# output:-[(1, 'apple'), (2, 'orange'), (3, 'cherry')]
+
+n = 5
+a = [0] * n
+print(a)
+# output:-[0, 0, 0, 0, 0]
+
+n = 5
+a = list(range(n))
+print(a)
+# output:-[0, 1, 2, 3, 4]
+
+#append 6 begning of the list
+li = [1, 3, 4, 5, 7]
+li.insert(0, 6)
+print(li)
+# output:-[6, 1, 3, 4, 5, 7]
+
+li = [1, 3, 4, 5, 7]
+li = [6] + li
+print(li)
+# output:-[6, 1, 3, 4, 5, 7]
+
+# appending list to a list
+a = [1, 2, 3]
+a.append([4, 5])
+print(a)
+# output:-[1, 2, 3, [4, 5]]
+
+# Append an element to the second sublist
+a = [[1, 2], [3, 4]]
+a[1].append(5)
+print(a)
+# output:-[[1, 2], [3, 4, 5]]
+
+# Extend the list by adding multiple elements
+a = []
+a.extend([3,4,5])
+print(a)
+
+# remove duplicate from a list
+a = [1, 2, 2, 3, 4, 4, 5]
+a = list(set(a))
+print(a)
+# output:-[1, 2, 3, 4, 5]
+
+# flatten list
+# a = [[1, 2, 3], [4, 5], [6, 7]]
+# # Using sum to flatten the list
+# b = sum(a, [])
+# print(b)
+# output:-[1, 2, 3, 4, 5]
+
+
+#find even number in list
+nums = [1, 2, 3, 4, 5, 6]
+evens = [x for x in nums if x % 2 == 0]
+print(evens)
+# output:-[2, 4, 6]
+
+# union of list to set
+a = [1, 2, 3, 2, 1]
+b = [3, 2, 2, 3, 3, 2]
+result = sorted(set(a) | set(b))  # or: sorted(set(a + b))
+print(result)
+# output:-[1, 2, 3]
+
+# intersection
+arr1 = [1, 2, 3, 4]
+arr2 = [2, 4, 6, 7, 8]
+# Intersection using set
+intersection = sorted(set(arr1) & set(arr2))
+print(intersection)
+# output:-[2, 4]
+
+# merge two list and return one shorted list
+# input:[1,2,4],[1,3,4]
+# output:- [1,1,2,3,4,4]
+a = [1,2,4]
+b = [1,3,4]
+merge = a+b
+merge.sort()
+print(merge)
+
+# Input: [0,0,1,1,1,2,2,3,3,4]
+# Output: [0,1,2,3,4] (length = 5)
+nums = [0,0,1,1,1,2,2,3,3,4]
+unique_nums = list(set(nums))
+unique_nums.sort()
+print(unique_nums)
+print(len(unique_nums))
+
+
+
+
+# ************************************************************************
 
