@@ -44,14 +44,16 @@ def greet(name,age):
 
 greet(age=21,name="twinkle")
 
-# arbitary argument:-Use *args when you don’t know how many positional arguments will be passed.
+# arbitary argument:-Use *args when you don’t know how many positional
+# arguments will be passed.its like a tuple
 def info(*args):
     for i in args:
         print(i)
 
 info("alice",25,"bca")
 
-# keyword arbitary argument:-Use **kwargs when you don’t know how many keyword arguments will be passed.
+# keyword arbitary argument:-Use **kwargs when you don’t know how many
+# keyword arguments will be passed.its like a dictionary.
 def show_info(**kwargs):
     for key, value in kwargs.items():
         print(key, ":", value)

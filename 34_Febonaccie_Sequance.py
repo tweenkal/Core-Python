@@ -1,5 +1,4 @@
 # 👉Fibonacci Seriece:-
-from cgitb import reset
 
 # 0,1,1,2,3,5,8,13....
 # 0+1=1 , 1+1=2 , 2+1=3 , 3+2=5 , 5+3=8 , 8+5=13....
@@ -43,5 +42,7 @@ from cgitb import reset
 #     a = b
 #     b = c
 #     print(c)
+
+
 
 
