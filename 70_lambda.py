@@ -130,3 +130,5 @@ mul = reduce(lambda x,y : x * y,num)
 print(mul)
 
 
+
+
