@@ -11,6 +11,16 @@
 
 # 👉It is break down the project into small small parts
 
+# ============================================================================
+# modules :- A module in Python is just a file that contains Python code
+
+# two type of modules :- 1)built in modules 2)External modules
+# built in modules:-Already provided by Python.
+# Example: math, random, os, sys, datetime.
+
+# external modules:-Created by other developers and installed using pip.
+# Examples: numpy, pandas, flask, requests.
+
 from Modules2 import *
 
 a = 20
@@ -30,3 +40,4 @@ print("div=",c)
 
 c = mod(a,b)
 print("Mod=",c)
+
