@@ -233,3 +233,53 @@ try:
     print(next(it))  # Raises StopIteration
 except StopIteration:
     print("StopIteration caught: No more items in iterator")
+
+
+# ==============================================================================
+
+try:
+    a = float(input("Enter num1="))
+    b = float(input("Enter num2="))
+
+    c = a / b
+
+except ValueError:
+    print("Please enter valid number")
+
+except ZeroDivisionError:
+    print("Division by zero is not allowed")
+
+else:
+    print("Result",c)
+    print("programe executed succesfully!!")
+finally:
+    print("Good Bye")
+
+# ===================================================================================
+
+try:
+    num1 = int(input("Enter num1="))
+    num2 = int(input("Enter num2="))
+    op = input("Enter operation(+,-,*,/):")
+
+    if op == "+":
+        result = num1 + num2
+    elif op == "-":
+        result = num1 - num2
+    elif op == "*":
+        result = num1 * num2
+    elif op == "/":
+        result = num1 / num2
+    else:
+        print("Invalid choice")
+
+except ValueError:
+    print("Please enter valid number")
+
+except ZeroDivisionError:
+    print("Division by zero is not allowed")
+
+else:
+    print("Result:",result)
+finally:
+    print("programe is finished!!")
