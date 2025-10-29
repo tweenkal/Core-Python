@@ -484,6 +484,15 @@ a = list(set(a))
 print(a)
 # output:-[1, 2, 3, 4, 5]
 
+# second method
+a = [1, 2, 3, 2, 3, 4]
+b = []
+for i in a:
+    if i not in b:
+        b.append(i)
+print(b)
+
+
 # flatten list
 # a = [[1, 2, 3], [4, 5], [6, 7]]
 # # Using sum to flatten the list
@@ -531,4 +540,89 @@ print(unique_nums)
 print(len(unique_nums))
 
 # ************************************************************************
+# Reverse a list (without using reverse() or slicing
+a = [1,2,3,4,5]
+rev = []
+
+for i in a:
+    rev.insert(0,i)
+print(rev)
+
+#output:- [5, 4, 3, 2, 1]
+
+# ************************************************************************
+# Separate odd and even numbers from a list.
+a = [1,2,3,4,5,6]
+even = [i for i in a if i % 2 == 0]
+odd = [i for i in a if i % 2 != 0]
+
+print("even=",even)
+print("odd=",odd)
+
+# ************************************************************************
+
+# Concatenate two lists without using the + operator.
+a = [1,2,3,4,5]
+b = [6,7,8,9,10]
+a.extend(b)
+print(a)
+
+c = [1,2,3,4,5]
+d = [6,7,8,9,10]
+
+for i in b:
+    c.append(i)
+print(c)
+
+# ************************************************************************
+
+# Create a new list containing the squares of all numbers in another list.
+a = [1,2,3,4,5]
+square = []
+
+for i in a:
+    square.append(i ** 2)
+print(a)
+print(square)
+
+# ************************************************************************
+
+# Find all palindrome elements in a list
+a = ["madam", "apple", "level", "world", "noon"]
+pallindrom = []
+
+for i in a:
+    if i == i[::-1]:
+        pallindrom.append(i)
+print(pallindrom)
+
+# ************************************************************************
+
+# Separate positive and negative numbers into two lists
+a = [1,-1,2,-2,3,-3,4,-4]
+pos = []
+neg = []
+
+for i in a:
+    if i >= 0:
+        pos.append(i)
+    else:
+        neg.append(i)
+
+print("positive=",pos)
+print("negative=",neg)
+
+# ************************************************************************
+
+# Find common elements between two lists
+
+a = [1,2,3,1,2,4,5]
+b = [4,5,6,7,8]
+common = []
+
+for i in a:
+    if i in b:
+        common.append(i)
+
+print("common element=",common)
 
