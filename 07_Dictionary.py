@@ -3,7 +3,6 @@
 # 👉Dictionary is represent the {}.
 # 👉Dictionary is the key is the unique and im-mutable means it can not
 # change the value.
-
 #👉in interview already ask this questions
 student = [{'abc': 1, 'bca': 2, 'ddd': 3}]
 result = list(student[0].values())
@@ -331,16 +330,15 @@ print(myfamily)
 print(myfamily["child2"]["name"])
 # output:-Tobias
 
+# Write a Python program to sort a dictionary by its values in ascending order. and descending order
+# desending
+marks = {'Rahul': 85, 'Priya': 92, 'Amit': 78, 'Sneha': 90}
+sorted_marks = dict(sorted(marks.items(), key=lambda x: x[1], reverse=True))
+print(sorted_marks)
 
-
-
-
-
-
-
-
-
-
+marks = {'Rahul': 85, 'Priya': 92, 'Amit': 78, 'Sneha': 90}
+sorted = dict(sorted(marks.items() , key= lambda x: x[1]))
+print(sorted)
 
 
 
